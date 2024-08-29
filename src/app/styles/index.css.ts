@@ -9,10 +9,3 @@ export const calendar = style({
   width: '80%',
   margin: '0 auto'
 })
-
-export const addBtn = style({
-  display: "grid",
-  alignItems: 'center',
-  justifyContent: 'center',
-  margin: '0 auto'
-})
