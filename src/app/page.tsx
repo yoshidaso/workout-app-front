@@ -2,7 +2,8 @@
 
 import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
-import {addBtn, calendar, title} from "@/app/index.css";
+import { calendar, title} from "@/app/styles/index.css";
+import TrainingButton from "@/app/components/TrainingButton";
 
 type WorkDetail = {
   title: string;
@@ -12,12 +13,12 @@ type WorkDetail = {
 const workDetails: WorkDetail[] = [];
 
 export default function Home() {
+
+
   return (
     <main>
       <h1 className={title}>HOME</h1>
-      <button className={addBtn}>
-        <h2>本日のトレーニングを追加</h2>
-      </button>
+      <TrainingButton/>
       <div className={calendar}>
         <FullCalendar
           plugins={[dayGridPlugin]}
