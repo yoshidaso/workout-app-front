@@ -2,7 +2,7 @@
 
 import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
-import { calendar, title} from "@/app/styles/index.css";
+import {calendar, title} from "@/app/styles/index.css";
 import TrainingButton from "@/app/components/TrainingButton";
 
 type WorkDetail = {
@@ -10,7 +10,7 @@ type WorkDetail = {
   start: string;
 }
 
-const workDetails: WorkDetail[] = [];
+const workDetails: WorkDetail[] = [{title: '三頭', start: '2024-09-08'}, {title: '二頭', start: '2024-09-08'}];
 
 export default function Home() {
 
